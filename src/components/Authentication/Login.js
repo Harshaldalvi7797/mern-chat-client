@@ -40,7 +40,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        "/api/user/login",
+        "https://mychatapitest.herokuapp.com/api/user/login",
         { email, password },
         config
       );
