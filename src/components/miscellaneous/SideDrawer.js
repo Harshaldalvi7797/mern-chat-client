@@ -45,7 +45,8 @@ const SideDrawer = () => {
     const history = useHistory();
     const logoutHandler = () => {
         localStorage.removeItem("userInfo");
-        history.push("/");
+        window.location = "/"
+        // history.push("/");
     };
 
     const handleSearch = async () => {
